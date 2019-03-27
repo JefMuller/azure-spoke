@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_hub_action_type_definition">
+    <sys_hub_action_type_definition action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <active>true</active>
+        <annotation/>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category display_value="Virtual Machine">8439abdfdb54fb00bd71f88eaf96190e</category>
+        <copied_from>17b404e3dbd4fb00bd71f88eaf9619cc</copied_from>
+        <copied_from_name>Create or Update Resource Group</copied_from_name>
+        <description>https://docs.microsoft.com/en-us/rest/api/compute/virtualmachines</description>
+        <internal_name>create_or_update_virtual_machine</internal_name>
+        <label_cache>[{"name":"{{action.resourcegroupname}}","label":"action➛resourceGroupName","type":"action","ref":""},{"name":"{{action.api_version}}","label":"action➛apiVersion","type":"action","ref":""},{"name":"{{action.location}}","label":"action➛location","type":"action","ref":""},{"name":"{{action.subscriptionid}}","label":"action➛subscriptionId","type":"action","ref":""},{"name":"{{action.vmname}}","label":"action➛VM Name","type":"action","ref":""},{"name":"{{action.existingnetworkinterfacename}}","label":"action➛Network Interface ID","type":"action","ref":""},{"name":"{{action.existingavailabilitysetname}}","label":"action➛Availability Set ID","type":"action","ref":""},{"name":"{{action.osusername}}","label":"action➛OS Username","type":"action","ref":""},{"name":"{{action.ospassword}}","label":"action➛OS Password","type":"action","ref":""},{"name":"{{action.vmsize}}","label":"action➛VM Size","type":"action","ref":""},{"name":"{{action.oauthtoken}}","label":"action➛oauthToken","type":"action","ref":""},{"name":"{{action.storageaccounttype}}","label":"action➛Storage Account Type","type":"action","ref":""},{"name":"{{action.disk_create_option_type}}","label":"action➛Disk Create Option Type","type":"action","ref":""},{"name":"{{action.storage_caching_type}}","label":"action➛Storage Caching Type","type":"action","ref":""},{"name":"{{action.image_offer}}","label":"action➛Image Offer","type":"action","ref":""},{"name":"{{action.image_version}}","label":"action➛Image Version","type":"action","ref":""},{"name":"{{action.image_publisher}}","label":"action➛Image Publisher","type":"action","ref":""},{"name":"{{action.image_sku}}","label":"action➛Image Sku","type":"action","ref":""},{"name":"{{step[2aec35c2-6822-4896-b03c-580e18034881].b}}","label":"step➛prepareRequest➛b","type":"step","ref":""},{"name":"{{step[2aec35c2-6822-4896-b03c-580e18034881].bo}}","label":"step➛prepareRequest➛bo","type":"step","ref":""},{"name":"{{step[2aec35c2-6822-4896-b03c-580e18034881].bod}}","label":"step➛prepareRequest➛bod","type":"step","ref":""},{"name":"{{step[2aec35c2-6822-4896-b03c-580e18034881].body}}","label":"step➛prepareRequest➛body","type":"step","ref":""},{"name":"{{step[2aec35c2-6822-4896-b03c-580e18034881].p}}","label":"step➛prepareRequest➛p","type":"step","ref":""},{"name":"{{step[2aec35c2-6822-4896-b03c-580e18034881].pa}}","label":"step➛prepareRequest➛pa","type":"step","ref":""},{"name":"{{step[2aec35c2-6822-4896-b03c-580e18034881].pat}}","label":"step➛prepareRequest➛pat","type":"step","ref":""},{"name":"{{step[2aec35c2-6822-4896-b03c-580e18034881].path}}","label":"step➛prepareRequest➛path","type":"step","ref":""},{"name":"{{step[7e43686d-e3fe-420e-9ac7-5be871246e57].error_message}}","label":"step➛REST step➛Error Message","type":"step","ref":""},{"name":"{{step[7e43686d-e3fe-420e-9ac7-5be871246e57].response_body}}","label":"step➛REST step➛Response Body","type":"step","ref":""},{"name":"{{step[7e43686d-e3fe-420e-9ac7-5be871246e57].error_code}}","label":"step➛REST step➛Error Code","type":"step","ref":""},{"name":"{{step[d84365ac-f794-40a9-bd49-de62cd02c5d1].}}","label":"step➛Post Processing➛","type":"step","ref":""},{"name":"{{step[d84365ac-f794-40a9-bd49-de62cd02c5d1].v}}","label":"step➛Post Processing➛v","type":"step","ref":""},{"name":"{{step[d84365ac-f794-40a9-bd49-de62cd02c5d1].vm}}","label":"step➛Post Processing➛vm","type":"step","ref":""},{"name":"{{step[d84365ac-f794-40a9-bd49-de62cd02c5d1].vmI}}","label":"step➛Post Processing➛vmI","type":"step","ref":""},{"name":"{{step[d84365ac-f794-40a9-bd49-de62cd02c5d1].vmId}}","label":"step➛Post Processing➛vmId","type":"step","ref":""},{"name":"{{step[d84365ac-f794-40a9-bd49-de62cd02c5d1].id}}","label":"step➛Post Processing➛id","type":"step","ref":""},{"name":"{{step[d84365ac-f794-40a9-bd49-de62cd02c5d1].name}}","label":"step➛Post Processing➛name","type":"step","ref":""},{"name":"{{step[d84365ac-f794-40a9-bd49-de62cd02c5d1].provisioningState}}","label":"step➛Post Processing➛provisioningState","type":"step","ref":""}]</label_cache>
+        <latest_snapshot>01c64e33db583300bd71f88eaf961969</latest_snapshot>
+        <master_snapshot>185dc4abdbd4fb00bd71f88eaf9619df</master_snapshot>
+        <name>Create or Update Virtual Machine</name>
+        <outputs/>
+        <outputs/>
+        <state>published</state>
+        <sys_class_name>sys_hub_action_type_definition</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-03-25 22:46:34</sys_created_on>
+        <sys_id>604a802bdbd4fb00bd71f88eaf9619c7</sys_id>
+        <sys_mod_count>32</sys_mod_count>
+        <sys_name>Create or Update Virtual Machine</sys_name>
+        <sys_package display_value="Azure" source="x_snc_azure_spoke">7603eb16db5c3b00bd71f88eaf9619b8</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Azure">7603eb16db5c3b00bd71f88eaf9619b8</sys_scope>
+        <sys_update_name>sys_hub_action_type_definition_604a802bdbd4fb00bd71f88eaf9619c7</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-03-27 02:29:12</sys_updated_on>
+        <system_level>false</system_level>
+        <type/>
+    </sys_hub_action_type_definition>
+    <sys_translated_text action="delete_multiple" query="documentkey=604a802bdbd4fb00bd71f88eaf9619c7"/>
+    <sys_variable_value action="delete_multiple" query="document_key=604a802bdbd4fb00bd71f88eaf9619c7"/>
+    <sys_element_mapping action="delete_multiple" query="id=604a802bdbd4fb00bd71f88eaf9619c7"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>id</field>
+        <id>604a802bdbd4fb00bd71f88eaf9619c7</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-03-25 22:46:40</sys_created_on>
+        <sys_id>024a042bdbd4fb00bd71f88eaf961904</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-03-27 02:28:57</sys_updated_on>
+        <table>var__m_sys_hub_action_output_604a802bdbd4fb00bd71f88eaf9619c7</table>
+        <value>{{step[d84365ac-f794-40a9-bd49-de62cd02c5d1].id}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>location</field>
+        <id>604a802bdbd4fb00bd71f88eaf9619c7</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-03-25 22:46:40</sys_created_on>
+        <sys_id>4e4a042bdbd4fb00bd71f88eaf961903</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-03-25 22:58:47</sys_updated_on>
+        <table>var__m_sys_hub_action_output_604a802bdbd4fb00bd71f88eaf9619c7</table>
+        <value>{{step[d84365ac-f794-40a9-bd49-de62cd02c5d1].storageDiskVhdUri}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>name</field>
+        <id>604a802bdbd4fb00bd71f88eaf9619c7</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-03-25 22:46:40</sys_created_on>
+        <sys_id>8a4a042bdbd4fb00bd71f88eaf961903</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-03-27 02:28:57</sys_updated_on>
+        <table>var__m_sys_hub_action_output_604a802bdbd4fb00bd71f88eaf9619c7</table>
+        <value>{{step[d84365ac-f794-40a9-bd49-de62cd02c5d1].name}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>provisioningstate</field>
+        <id>604a802bdbd4fb00bd71f88eaf9619c7</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-03-25 22:46:40</sys_created_on>
+        <sys_id>c24a042bdbd4fb00bd71f88eaf961904</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-03-27 02:28:57</sys_updated_on>
+        <table>var__m_sys_hub_action_output_604a802bdbd4fb00bd71f88eaf9619c7</table>
+        <value>{{step[d84365ac-f794-40a9-bd49-de62cd02c5d1].provisioningState}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>storagediskimageuri</field>
+        <id>604a802bdbd4fb00bd71f88eaf9619c7</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-03-25 22:59:44</sys_created_on>
+        <sys_id>214d84abdbd4fb00bd71f88eaf961902</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-03-25 22:59:44</sys_updated_on>
+        <table>var__m_sys_hub_action_output_604a802bdbd4fb00bd71f88eaf9619c7</table>
+        <value>{{step[d84365ac-f794-40a9-bd49-de62cd02c5d1].storageDiskImageUri}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>storagediskname</field>
+        <id>604a802bdbd4fb00bd71f88eaf9619c7</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-03-25 22:59:45</sys_created_on>
+        <sys_id>e14d84abdbd4fb00bd71f88eaf961902</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-03-25 22:59:45</sys_updated_on>
+        <table>var__m_sys_hub_action_output_604a802bdbd4fb00bd71f88eaf9619c7</table>
+        <value>{{step[d84365ac-f794-40a9-bd49-de62cd02c5d1].storageDiskName}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>storagediskvhduri</field>
+        <id>604a802bdbd4fb00bd71f88eaf9619c7</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-03-25 22:59:45</sys_created_on>
+        <sys_id>a54d84abdbd4fb00bd71f88eaf961902</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-03-25 22:59:45</sys_updated_on>
+        <table>var__m_sys_hub_action_output_604a802bdbd4fb00bd71f88eaf9619c7</table>
+        <value>{{step[d84365ac-f794-40a9-bd49-de62cd02c5d1].storageDiskVhdUri}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>vmid</field>
+        <id>604a802bdbd4fb00bd71f88eaf9619c7</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-03-25 22:59:44</sys_created_on>
+        <sys_id>6d4d84abdbd4fb00bd71f88eaf961901</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-03-25 22:59:44</sys_updated_on>
+        <table>var__m_sys_hub_action_output_604a802bdbd4fb00bd71f88eaf9619c7</table>
+        <value>{{step[d84365ac-f794-40a9-bd49-de62cd02c5d1].vmId}}</value>
+    </sys_element_mapping>
+</record_update>

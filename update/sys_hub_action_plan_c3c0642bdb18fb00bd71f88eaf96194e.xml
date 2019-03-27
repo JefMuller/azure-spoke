@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_hub_action_plan">
+    <sys_hub_action_plan action="INSERT_OR_UPDATE">
+        <action_id display_value="Create or Update Network Interface">0a7954e3db18fb00bd71f88eaf9619bd</action_id>
+        <plan>{"persistor":{"@class":".ChunkingPlanPersistor","table":"sys_hub_action_plan","id":"c3c0642bdb18fb00bd71f88eaf96194e","name":"plan"}}</plan>
+        <snapshot>a6d58effdb183300bd71f88eaf9619ba</snapshot>
+        <sys_class_name>sys_hub_action_plan</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-03-26 00:25:02</sys_created_on>
+        <sys_id>c3c0642bdb18fb00bd71f88eaf96194e</sys_id>
+        <sys_mod_count>7</sys_mod_count>
+        <sys_name>0a7954e3db18fb00bd71f88eaf9619bd</sys_name>
+        <sys_package display_value="Azure" source="x_snc_azure_spoke">7603eb16db5c3b00bd71f88eaf9619b8</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Azure">7603eb16db5c3b00bd71f88eaf9619b8</sys_scope>
+        <sys_update_name>sys_hub_action_plan_c3c0642bdb18fb00bd71f88eaf96194e</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-03-27 02:25:10</sys_updated_on>
+    </sys_hub_action_plan>
+</record_update>

@@ -1,0 +1,346 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_hub_step_instance">
+    <sys_hub_step_instance action="INSERT_OR_UPDATE">
+        <action display_value="Create or Update Virtual Machine">604a802bdbd4fb00bd71f88eaf9619c7</action>
+        <cid>2aec35c2-6822-4896-b03c-580e18034881</cid>
+        <extended_inputs/>
+        <extended_inputs/>
+        <extended_outputs/>
+        <icon/>
+        <inputs/>
+        <label>prepareRequest</label>
+        <order>1</order>
+        <outputs/>
+        <step_type display_value="Script">106afb6647032200b4fad7527c9a71e7</step_type>
+        <sys_class_name>sys_hub_step_instance</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-03-25 22:46:36</sys_created_on>
+        <sys_id>814ac02bdbd4fb00bd71f88eaf961928</sys_id>
+        <sys_mod_count>12</sys_mod_count>
+        <sys_name>prepareRequest</sys_name>
+        <sys_package display_value="Azure" source="x_snc_azure_spoke">7603eb16db5c3b00bd71f88eaf9619b8</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Azure">7603eb16db5c3b00bd71f88eaf9619b8</sys_scope>
+        <sys_update_name>sys_hub_step_instance_814ac02bdbd4fb00bd71f88eaf961928</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-03-27 02:21:32</sys_updated_on>
+    </sys_hub_step_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=814ac02bdbd4fb00bd71f88eaf961928"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>814ac02bdbd4fb00bd71f88eaf961928</document_key>
+        <order>400</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-03-25 22:46:38</sys_created_on>
+        <sys_id>214ac02bdbd4fb00bd71f88eaf961982</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-03-25 22:46:38</sys_updated_on>
+        <value>35aa573fd7802200bdbaee5b5e610375</value>
+        <variable display_value="">f5e56d79b3101300176b051a16a8dce4</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>814ac02bdbd4fb00bd71f88eaf961928</document_key>
+        <order>600</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-03-25 22:46:38</sys_created_on>
+        <sys_id>e54ac02bdbd4fb00bd71f88eaf961982</sys_id>
+        <sys_mod_count>10</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-03-27 02:21:32</sys_updated_on>
+        <value>(function execute(inputs, outputs) {
+    //Set uri
+  	outputs.path = "/"+inputs.subscriptionId+"/resourceGroups/"+inputs.resourceGroupName+"/providers/Microsoft.Compute/virtualMachines/"+inputs.vmName;
+
+  	//Set body
+    outputs.body = {};
+	outputs.body.location = inputs.location;
+    outputs.body.properties = {};
+    outputs.body.properties.hardwareProfile = {};
+    outputs.body.properties.hardwareProfile.vmSize = inputs.vmSize;
+    outputs.body.properties.storageProfile = {};
+    outputs.body.properties.storageProfile.imageReference = {};
+    outputs.body.properties.storageProfile.imageReference.sku = inputs.imageSku;
+    outputs.body.properties.storageProfile.imageReference.publisher = inputs.imagePublisher;
+    outputs.body.properties.storageProfile.imageReference.version = inputs.imageVersion
+    outputs.body.properties.storageProfile.imageReference.offer = inputs.imageOffer;
+    outputs.body.properties.storageProfile.osDisk = {};
+    outputs.body.properties.storageProfile.osDisk.caching = inputs.storageCachingType;
+    outputs.body.properties.storageProfile.osDisk.managedDisk = {};
+    outputs.body.properties.storageProfile.osDisk.managedDisk.storageAccountType = inputs.storageAccountType;
+    outputs.body.properties.storageProfile.osDisk.name = inputs.vmName + "osdisk";
+    outputs.body.properties.storageProfile.osDisk.createOption = inputs.diskCreateOptionType;
+    outputs.body.properties.networkProfile = {};
+    outputs.body.properties.networkProfile.networkInterfaces = [];
+    var networkInterface = {};
+    networkInterface.id = inputs.networkInterfaceId;
+    networkInterface.properties = {};
+    networkInterface.properties.primary = true;
+    outputs.body.properties.networkProfile.networkInterfaces.push(networkInterface);
+    outputs.body.properties.osProfile = {};
+    outputs.body.properties.osProfile.adminUsername = inputs.osUsername;
+    outputs.body.properties.osProfile.computerName = inputs.vmName;
+    outputs.body.properties.osProfile.adminPassword = inputs.osPassword;
+    outputs.body.properties.availabilitySet = {};
+    outputs.body.properties.availabilitySet.id = inputs.availabilitySetId;
+    outputs.body.name = inputs.vmName;
+    outputs.body = global.JSON.stringify(outputs.body);
+})(inputs, outputs);</value>
+        <variable display_value="">71aa7f6647032200b4fad7527c9a719b</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=814ac02bdbd4fb00bd71f88eaf961928"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>apiVersion</field>
+        <id>814ac02bdbd4fb00bd71f88eaf961928</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-03-25 22:46:38</sys_created_on>
+        <sys_id>a54ac02bdbd4fb00bd71f88eaf961983</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-03-25 22:46:38</sys_updated_on>
+        <table>var__m_sys_hub_step_ext_input_814ac02bdbd4fb00bd71f88eaf961928</table>
+        <value>{{action.api_version}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>application</field>
+        <id>814ac02bdbd4fb00bd71f88eaf961928</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-03-25 22:46:38</sys_created_on>
+        <sys_id>e54ac02bdbd4fb00bd71f88eaf961981</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-03-25 22:46:38</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_106afb6647032200b4fad7527c9a71e7</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>availabilitySetId</field>
+        <id>814ac02bdbd4fb00bd71f88eaf961928</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-03-26 01:05:33</sys_created_on>
+        <sys_id>281a24efdb18fb00bd71f88eaf961986</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-03-26 01:05:33</sys_updated_on>
+        <table>var__m_sys_hub_step_ext_input_814ac02bdbd4fb00bd71f88eaf961928</table>
+        <value>{{action.existingavailabilitysetname}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>diskCreateOptionType</field>
+        <id>814ac02bdbd4fb00bd71f88eaf961928</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-03-27 00:05:28</sys_created_on>
+        <sys_id>c6e565f3dbd43300bd71f88eaf96194f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-03-27 00:05:28</sys_updated_on>
+        <table>var__m_sys_hub_step_ext_input_814ac02bdbd4fb00bd71f88eaf961928</table>
+        <value>{{action.disk_create_option_type}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>existingAvailabilitySetName</field>
+        <id>814ac02bdbd4fb00bd71f88eaf961928</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-03-25 22:58:46</sys_created_on>
+        <sys_id>970d80abdbd4fb00bd71f88eaf9619b2</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-03-25 22:58:46</sys_updated_on>
+        <table>var__m_sys_hub_step_ext_input_814ac02bdbd4fb00bd71f88eaf961928</table>
+        <value>{{action.existingavailabilitysetname}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>existingNetworkInterfaceName</field>
+        <id>814ac02bdbd4fb00bd71f88eaf961928</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-03-25 22:58:46</sys_created_on>
+        <sys_id>130d80abdbd4fb00bd71f88eaf9619b2</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-03-25 22:58:46</sys_updated_on>
+        <table>var__m_sys_hub_step_ext_input_814ac02bdbd4fb00bd71f88eaf961928</table>
+        <value>{{action.existingnetworkinterfacename}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>imageOffer</field>
+        <id>814ac02bdbd4fb00bd71f88eaf961928</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-03-27 00:05:28</sys_created_on>
+        <sys_id>8ee565f3dbd43300bd71f88eaf96194e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-03-27 00:05:28</sys_updated_on>
+        <table>var__m_sys_hub_step_ext_input_814ac02bdbd4fb00bd71f88eaf961928</table>
+        <value>{{action.image_offer}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>imagePublisher</field>
+        <id>814ac02bdbd4fb00bd71f88eaf961928</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-03-27 00:05:28</sys_created_on>
+        <sys_id>cae565f3dbd43300bd71f88eaf96194e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-03-27 00:05:28</sys_updated_on>
+        <table>var__m_sys_hub_step_ext_input_814ac02bdbd4fb00bd71f88eaf961928</table>
+        <value>{{action.image_publisher}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>imageSku</field>
+        <id>814ac02bdbd4fb00bd71f88eaf961928</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-03-27 00:05:28</sys_created_on>
+        <sys_id>0ae565f3dbd43300bd71f88eaf96194e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-03-27 00:05:28</sys_updated_on>
+        <table>var__m_sys_hub_step_ext_input_814ac02bdbd4fb00bd71f88eaf961928</table>
+        <value>{{action.image_sku}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>imageVersion</field>
+        <id>814ac02bdbd4fb00bd71f88eaf961928</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-03-27 00:05:28</sys_created_on>
+        <sys_id>46e565f3dbd43300bd71f88eaf96194e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-03-27 00:05:28</sys_updated_on>
+        <table>var__m_sys_hub_step_ext_input_814ac02bdbd4fb00bd71f88eaf961928</table>
+        <value>{{action.image_version}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>location</field>
+        <id>814ac02bdbd4fb00bd71f88eaf961928</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-03-25 22:46:38</sys_created_on>
+        <sys_id>e14ac02bdbd4fb00bd71f88eaf961983</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-03-25 22:46:38</sys_updated_on>
+        <table>var__m_sys_hub_step_ext_input_814ac02bdbd4fb00bd71f88eaf961928</table>
+        <value>{{action.location}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>networkInterfaceId</field>
+        <id>814ac02bdbd4fb00bd71f88eaf961928</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-03-26 01:05:33</sys_created_on>
+        <sys_id>641a24efdb18fb00bd71f88eaf961986</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-03-26 01:05:33</sys_updated_on>
+        <table>var__m_sys_hub_step_ext_input_814ac02bdbd4fb00bd71f88eaf961928</table>
+        <value>{{action.existingnetworkinterfacename}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>osPassword</field>
+        <id>814ac02bdbd4fb00bd71f88eaf961928</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-03-25 22:58:46</sys_created_on>
+        <sys_id>5f0d80abdbd4fb00bd71f88eaf9619b1</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-03-25 22:58:46</sys_updated_on>
+        <table>var__m_sys_hub_step_ext_input_814ac02bdbd4fb00bd71f88eaf961928</table>
+        <value>{{action.ospassword}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>osUsername</field>
+        <id>814ac02bdbd4fb00bd71f88eaf961928</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-03-25 22:58:46</sys_created_on>
+        <sys_id>9b0d80abdbd4fb00bd71f88eaf9619b1</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-03-25 22:58:46</sys_updated_on>
+        <table>var__m_sys_hub_step_ext_input_814ac02bdbd4fb00bd71f88eaf961928</table>
+        <value>{{action.osusername}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>resourceGroupName</field>
+        <id>814ac02bdbd4fb00bd71f88eaf961928</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-03-25 22:46:38</sys_created_on>
+        <sys_id>694ac02bdbd4fb00bd71f88eaf961983</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-03-25 22:46:38</sys_updated_on>
+        <table>var__m_sys_hub_step_ext_input_814ac02bdbd4fb00bd71f88eaf961928</table>
+        <value>{{action.resourcegroupname}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>script</field>
+        <id>814ac02bdbd4fb00bd71f88eaf961928</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-03-25 22:46:38</sys_created_on>
+        <sys_id>ad4ac02bdbd4fb00bd71f88eaf961981</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-03-25 22:46:38</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_106afb6647032200b4fad7527c9a71e7</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>storageAccountType</field>
+        <id>814ac02bdbd4fb00bd71f88eaf961928</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-03-27 00:05:28</sys_created_on>
+        <sys_id>42e565f3dbd43300bd71f88eaf96194f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-03-27 00:05:28</sys_updated_on>
+        <table>var__m_sys_hub_step_ext_input_814ac02bdbd4fb00bd71f88eaf961928</table>
+        <value>{{action.storageaccounttype}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>storageCachineType</field>
+        <id>814ac02bdbd4fb00bd71f88eaf961928</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-03-27 00:05:28</sys_created_on>
+        <sys_id>06e565f3dbd43300bd71f88eaf96194f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-03-27 00:05:28</sys_updated_on>
+        <table>var__m_sys_hub_step_ext_input_814ac02bdbd4fb00bd71f88eaf961928</table>
+        <value>{{action.storage_caching_type}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>subscriptionId</field>
+        <id>814ac02bdbd4fb00bd71f88eaf961928</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-03-25 22:46:38</sys_created_on>
+        <sys_id>2d4ac02bdbd4fb00bd71f88eaf961983</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-03-25 22:46:38</sys_updated_on>
+        <table>var__m_sys_hub_step_ext_input_814ac02bdbd4fb00bd71f88eaf961928</table>
+        <value>{{action.subscriptionid}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>vmName</field>
+        <id>814ac02bdbd4fb00bd71f88eaf961928</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-03-25 22:58:46</sys_created_on>
+        <sys_id>d70d80abdbd4fb00bd71f88eaf9619b1</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-03-25 22:58:46</sys_updated_on>
+        <table>var__m_sys_hub_step_ext_input_814ac02bdbd4fb00bd71f88eaf961928</table>
+        <value>{{action.vmname}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>vmSize</field>
+        <id>814ac02bdbd4fb00bd71f88eaf961928</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-03-25 22:58:46</sys_created_on>
+        <sys_id>d30d80abdbd4fb00bd71f88eaf9619b2</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-03-25 22:58:46</sys_updated_on>
+        <table>var__m_sys_hub_step_ext_input_814ac02bdbd4fb00bd71f88eaf961928</table>
+        <value>{{action.vmsize}}</value>
+    </sys_element_mapping>
+</record_update>

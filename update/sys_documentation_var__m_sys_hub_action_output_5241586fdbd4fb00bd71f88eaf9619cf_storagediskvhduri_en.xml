@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_documentation element="storagediskvhduri" label="storageDiskVhdUri" language="en" table="var__m_sys_hub_action_output_5241586fdbd4fb00bd71f88eaf9619cf">
+        <sys_documentation action="INSERT_OR_UPDATE">
+            <element>storagediskvhduri</element>
+            <help/>
+            <hint/>
+            <label>storageDiskVhdUri</label>
+            <language>en</language>
+            <name>var__m_sys_hub_action_output_5241586fdbd4fb00bd71f88eaf9619cf</name>
+            <plural/>
+            <sys_class_name>sys_documentation</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2019-03-25 23:17:21</sys_created_on>
+            <sys_id>7f41d86fdbd4fb00bd71f88eaf961928</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>storageDiskVhdUri</sys_name>
+            <sys_package display_value="Azure" source="x_snc_azure_spoke">7603eb16db5c3b00bd71f88eaf9619b8</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Azure">7603eb16db5c3b00bd71f88eaf9619b8</sys_scope>
+            <sys_update_name>sys_documentation_var__m_sys_hub_action_output_5241586fdbd4fb00bd71f88eaf9619cf_storagediskvhduri_en</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2019-03-25 23:17:21</sys_updated_on>
+            <url/>
+            <url_target/>
+        </sys_documentation>
+    </sys_documentation>
+</record_update>

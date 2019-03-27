@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_hub_action_type_definition">
+    <sys_hub_action_type_definition action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <active>true</active>
+        <annotation/>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category display_value="Availability Sets">8b71dc6fdbd4fb00bd71f88eaf961967</category>
+        <copied_from>17b404e3dbd4fb00bd71f88eaf9619cc</copied_from>
+        <copied_from_name>Create or Update Resource Group</copied_from_name>
+        <description>https://docs.microsoft.com/en-us/rest/api/compute/availabilitysets/createorupdate</description>
+        <internal_name>create_or_update_availability_set</internal_name>
+        <label_cache>[{"name":"{{action.resourcegroupname}}","label":"action➛resourceGroupName","type":"action","ref":""},{"name":"{{action.api_version}}","label":"action➛apiVersion","type":"action","ref":""},{"name":"{{action.location}}","label":"action➛location","type":"action","ref":""},{"name":"{{action.subscriptionid}}","label":"action➛subscriptionId","type":"action","ref":""},{"name":"{{action.name}}","label":"action➛name","type":"action","ref":""},{"name":"{{action.platformfaultdomaincount}}","label":"action➛platformFaultDomainCount","type":"action","ref":""},{"name":"{{action.platformupdatedomaincount}}","label":"action➛platformUpdateDomainCount","type":"action","ref":""},{"name":"{{action.skuname}}","label":"action➛skuName","type":"action","ref":""},{"name":"{{action.oauthtoken}}","label":"action➛oauthToken","type":"action","ref":""},{"name":"{{step[2aec35c2-6822-4896-b03c-580e18034881].b}}","label":"step➛prepareRequest➛b","type":"step","ref":""},{"name":"{{step[2aec35c2-6822-4896-b03c-580e18034881].bo}}","label":"step➛prepareRequest➛bo","type":"step","ref":""},{"name":"{{step[2aec35c2-6822-4896-b03c-580e18034881].bod}}","label":"step➛prepareRequest➛bod","type":"step","ref":""},{"name":"{{step[2aec35c2-6822-4896-b03c-580e18034881].body}}","label":"step➛prepareRequest➛body","type":"step","ref":""},{"name":"{{step[2aec35c2-6822-4896-b03c-580e18034881].p}}","label":"step➛prepareRequest➛p","type":"step","ref":""},{"name":"{{step[2aec35c2-6822-4896-b03c-580e18034881].pa}}","label":"step➛prepareRequest➛pa","type":"step","ref":""},{"name":"{{step[2aec35c2-6822-4896-b03c-580e18034881].pat}}","label":"step➛prepareRequest➛pat","type":"step","ref":""},{"name":"{{step[2aec35c2-6822-4896-b03c-580e18034881].path}}","label":"step➛prepareRequest➛path","type":"step","ref":""},{"name":"{{step[7e43686d-e3fe-420e-9ac7-5be871246e57].error_message}}","label":"step➛REST step➛Error Message","type":"step","ref":""},{"name":"{{step[7e43686d-e3fe-420e-9ac7-5be871246e57].response_body}}","label":"step➛REST step➛Response Body","type":"step","ref":""},{"name":"{{step[7e43686d-e3fe-420e-9ac7-5be871246e57].error_code}}","label":"step➛REST step➛Error Code","type":"step","ref":""},{"name":"{{step[d84365ac-f794-40a9-bd49-de62cd02c5d1].}}","label":"step➛Post Processing➛","type":"step","ref":""},{"name":"{{step[d84365ac-f794-40a9-bd49-de62cd02c5d1].i}}","label":"step➛Post Processing➛i","type":"step","ref":""},{"name":"{{step[d84365ac-f794-40a9-bd49-de62cd02c5d1].id}}","label":"step➛Post Processing➛id","type":"step","ref":""},{"name":"{{step[d84365ac-f794-40a9-bd49-de62cd02c5d1].n}}","label":"step➛Post Processing➛n","type":"step","ref":""},{"name":"{{step[d84365ac-f794-40a9-bd49-de62cd02c5d1].na}}","label":"step➛Post Processing➛na","type":"step","ref":""},{"name":"{{step[d84365ac-f794-40a9-bd49-de62cd02c5d1].nam}}","label":"step➛Post Processing➛nam","type":"step","ref":""},{"name":"{{step[d84365ac-f794-40a9-bd49-de62cd02c5d1].name}}","label":"step➛Post Processing➛name","type":"step","ref":""}]</label_cache>
+        <latest_snapshot>7162063fdb183300bd71f88eaf961970</latest_snapshot>
+        <master_snapshot>a7e41423db18fb00bd71f88eaf96195a</master_snapshot>
+        <name>Create or Update Availability Set</name>
+        <outputs/>
+        <outputs/>
+        <state>published</state>
+        <sys_class_name>sys_hub_action_type_definition</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-03-25 23:17:54</sys_created_on>
+        <sys_id>bf615c6fdbd4fb00bd71f88eaf9619a9</sys_id>
+        <sys_mod_count>14</sys_mod_count>
+        <sys_name>Create or Update Availability Set</sys_name>
+        <sys_package display_value="Azure" source="x_snc_azure_spoke">7603eb16db5c3b00bd71f88eaf9619b8</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Azure">7603eb16db5c3b00bd71f88eaf9619b8</sys_scope>
+        <sys_update_name>sys_hub_action_type_definition_bf615c6fdbd4fb00bd71f88eaf9619a9</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-03-27 02:10:05</sys_updated_on>
+        <system_level>false</system_level>
+        <type/>
+    </sys_hub_action_type_definition>
+    <sys_translated_text action="delete_multiple" query="documentkey=bf615c6fdbd4fb00bd71f88eaf9619a9"/>
+    <sys_variable_value action="delete_multiple" query="document_key=bf615c6fdbd4fb00bd71f88eaf9619a9"/>
+    <sys_element_mapping action="delete_multiple" query="id=bf615c6fdbd4fb00bd71f88eaf9619a9"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>id</field>
+        <id>bf615c6fdbd4fb00bd71f88eaf9619a9</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-03-25 23:17:58</sys_created_on>
+        <sys_id>e4719c6fdbd4fb00bd71f88eaf96197d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-03-25 23:17:58</sys_updated_on>
+        <table>var__m_sys_hub_action_output_bf615c6fdbd4fb00bd71f88eaf9619a9</table>
+        <value>{{step[d84365ac-f794-40a9-bd49-de62cd02c5d1].id}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>location</field>
+        <id>bf615c6fdbd4fb00bd71f88eaf9619a9</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-03-25 23:17:58</sys_created_on>
+        <sys_id>24719c6fdbd4fb00bd71f88eaf96197d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-03-25 23:17:58</sys_updated_on>
+        <table>var__m_sys_hub_action_output_bf615c6fdbd4fb00bd71f88eaf9619a9</table>
+        <value>{{step[d84365ac-f794-40a9-bd49-de62cd02c5d1].location}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>name</field>
+        <id>bf615c6fdbd4fb00bd71f88eaf9619a9</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-03-25 23:17:58</sys_created_on>
+        <sys_id>60719c6fdbd4fb00bd71f88eaf96197d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-03-25 23:17:58</sys_updated_on>
+        <table>var__m_sys_hub_action_output_bf615c6fdbd4fb00bd71f88eaf9619a9</table>
+        <value>{{step[d84365ac-f794-40a9-bd49-de62cd02c5d1].name}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>provisioningstate</field>
+        <id>bf615c6fdbd4fb00bd71f88eaf9619a9</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-03-25 23:17:58</sys_created_on>
+        <sys_id>a8719c6fdbd4fb00bd71f88eaf96197d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-03-25 23:17:58</sys_updated_on>
+        <table>var__m_sys_hub_action_output_bf615c6fdbd4fb00bd71f88eaf9619a9</table>
+        <value>{{step[d84365ac-f794-40a9-bd49-de62cd02c5d1].provisioningState}}</value>
+    </sys_element_mapping>
+</record_update>

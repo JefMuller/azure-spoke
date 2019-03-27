@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_hub_flow">
+    <sys_hub_flow action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <active>false</active>
+        <annotation/>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <copied_from/>
+        <copied_from_name/>
+        <description/>
+        <internal_name>test_vm_actions</internal_name>
+        <label_cache>[{"name":"e0352dd5-3a51-4159-90e6-e12db1f43e88.provisioningstate","label":"3➛provisioningState","reference_display":"provisioningState","type":"string","base_type":"string"},{"name":"e0352dd5-3a51-4159-90e6-e12db1f43e88.name","label":"3➛name","type":"string","base_type":"string"},{"name":"e0352dd5-3a51-4159-90e6-e12db1f43e88.id","label":"3➛id","reference_display":"id","type":"string","base_type":"string"},{"name":"69ee6200-39f3-4205-a5df-f76e20bdf5e0.fqdn","label":"5➛fqdn","reference_display":"fqdn","type":"string","base_type":"string"},{"name":"69ee6200-39f3-4205-a5df-f76e20bdf5e0.type","label":"5➛type","reference_display":"type","type":"string","base_type":"string"},{"name":"69ee6200-39f3-4205-a5df-f76e20bdf5e0.ipconfid","label":"5➛ipconfId","reference_display":"ipconfId","type":"string","base_type":"string"},{"name":"69ee6200-39f3-4205-a5df-f76e20bdf5e0.provisioningstate","label":"5➛provisioningState","reference_display":"provisioningState","type":"string","base_type":"string"},{"name":"69ee6200-39f3-4205-a5df-f76e20bdf5e0.location","label":"5➛location","reference_display":"location","type":"string","base_type":"string"},{"name":"69ee6200-39f3-4205-a5df-f76e20bdf5e0.name","label":"5➛name","reference_display":"name","type":"string","base_type":"string"},{"name":"69ee6200-39f3-4205-a5df-f76e20bdf5e0.id","label":"5➛id","reference_display":"id","type":"string","base_type":"string"},{"name":"266b43b2-1348-412c-b9dc-1df8f06802bd.provisioningstate","label":"6➛provisioningState","reference_display":"provisioningState","type":"string","base_type":"string"},{"name":"266b43b2-1348-412c-b9dc-1df8f06802bd.location","label":"6➛location","reference_display":"location","type":"string","base_type":"string"},{"name":"266b43b2-1348-412c-b9dc-1df8f06802bd.name","label":"6➛name","reference_display":"name","type":"string","base_type":"string"},{"name":"266b43b2-1348-412c-b9dc-1df8f06802bd.id","label":"6➛id","reference_display":"id","type":"string","base_type":"string"},{"name":"3f3523c4-eae1-4790-9151-7b5d384003db.provisioningstate","label":"7➛provisioningState","reference_display":"provisioningState","type":"string","base_type":"string"},{"name":"3f3523c4-eae1-4790-9151-7b5d384003db.location","label":"7➛location","reference_display":"location","type":"string","base_type":"string"},{"name":"3f3523c4-eae1-4790-9151-7b5d384003db.name","label":"7➛name","reference_display":"name","type":"string","base_type":"string"},{"name":"3f3523c4-eae1-4790-9151-7b5d384003db.id","label":"7➛id","reference_display":"id","type":"string","base_type":"string"},{"name":"41e870c1-5861-43cc-9198-e098e99881f6.provisioningstate","label":"2➛provisioningState","reference_display":"provisioningState","type":"string","base_type":"string"},{"name":"41e870c1-5861-43cc-9198-e098e99881f6.location","label":"2➛location","reference_display":"location","type":"string","base_type":"string"},{"name":"41e870c1-5861-43cc-9198-e098e99881f6.name","label":"2➛name","type":"string","base_type":"string"},{"name":"41e870c1-5861-43cc-9198-e098e99881f6.id","label":"2➛id","reference_display":"id","type":"string","base_type":"string"},{"name":"40beb87c-2caf-4a1d-b775-0c8effd6b894.provisioningstate","label":"4➛provisioningState","reference_display":"provisioningState","type":"string","base_type":"string"},{"name":"40beb87c-2caf-4a1d-b775-0c8effd6b894.name","label":"4➛name","reference_display":"name","type":"string","base_type":"string"},{"name":"40beb87c-2caf-4a1d-b775-0c8effd6b894.id","label":"4➛id","reference_display":"id","type":"string","base_type":"string"},{"name":"50a2dd27-c27a-40df-bd58-95d4b4524fc3.storagediskvhduri","label":"8➛storageDiskVhdUri","reference_display":"storageDiskVhdUri","type":"string","base_type":"string"},{"name":"50a2dd27-c27a-40df-bd58-95d4b4524fc3.storagediskimageuri","label":"8➛storageDiskImageUri","reference_display":"storageDiskImageUri","type":"string","base_type":"string"},{"name":"50a2dd27-c27a-40df-bd58-95d4b4524fc3.storagediskname","label":"8➛storageDiskName","reference_display":"storageDiskName","type":"string","base_type":"string"},{"name":"50a2dd27-c27a-40df-bd58-95d4b4524fc3.vmid","label":"8➛vmId","reference_display":"vmId","type":"string","base_type":"string"},{"name":"50a2dd27-c27a-40df-bd58-95d4b4524fc3.provisioningstate","label":"8➛provisioningState","reference_display":"provisioningState","type":"string","base_type":"string"},{"name":"50a2dd27-c27a-40df-bd58-95d4b4524fc3.location","label":"8➛location","reference_display":"location","type":"string","base_type":"string"},{"name":"50a2dd27-c27a-40df-bd58-95d4b4524fc3.name","label":"8➛name","reference_display":"name","type":"string","base_type":"string"},{"name":"50a2dd27-c27a-40df-bd58-95d4b4524fc3.id","label":"8➛id","reference_display":"id","type":"string","base_type":"string"},{"name":"aa795911-5e50-46de-a5fe-42d3df0d2a73.id","label":"3➛id","reference_display":"id","type":"string","base_type":"string"},{"name":"aa795911-5e50-46de-a5fe-42d3df0d2a73.name","label":"3➛name","reference_display":"name","type":"string","base_type":"string"},{"name":"aa795911-5e50-46de-a5fe-42d3df0d2a73.location","label":"3➛location","reference_display":"location","type":"string","base_type":"string"},{"name":"aa795911-5e50-46de-a5fe-42d3df0d2a73.provisioningstate","label":"3➛provisioningState","reference_display":"provisioningState","type":"string","base_type":"string"},{"name":"288827c8-9956-4e6f-b8d1-c10a6e12f45a.id","label":"3➛id","reference_display":"id","type":"string","base_type":"string"},{"name":"288827c8-9956-4e6f-b8d1-c10a6e12f45a.name","label":"3➛name","reference_display":"name","type":"string","base_type":"string"},{"name":"288827c8-9956-4e6f-b8d1-c10a6e12f45a.location","label":"3➛location","reference_display":"location","type":"string","base_type":"string"},{"name":"288827c8-9956-4e6f-b8d1-c10a6e12f45a.provisioningstate","label":"3➛provisioningState","reference_display":"provisioningState","type":"string","base_type":"string"},{"name":"c9b010f9-d6ee-416d-b910-f0a70d712c2e.oauthtoken","label":"1➛oauthToken","type":"string","base_type":"string"}]</label_cache>
+        <latest_snapshot/>
+        <master_snapshot/>
+        <name>Test VM Actions</name>
+        <outputs/>
+        <remote_trigger_id/>
+        <run_as>user</run_as>
+        <sc_callable>false</sc_callable>
+        <show_draft_actions>false</show_draft_actions>
+        <show_triggered_flows>false</show_triggered_flows>
+        <status>draft</status>
+        <sys_class_name>sys_hub_flow</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-03-25 21:39:16</sys_created_on>
+        <sys_id>b2da331fdb94fb00bd71f88eaf961931</sys_id>
+        <sys_mod_count>17</sys_mod_count>
+        <sys_name>Test VM Actions</sys_name>
+        <sys_package display_value="Azure" source="x_snc_azure_spoke">7603eb16db5c3b00bd71f88eaf9619b8</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Azure">7603eb16db5c3b00bd71f88eaf9619b8</sys_scope>
+        <sys_update_name>sys_hub_flow_b2da331fdb94fb00bd71f88eaf961931</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-03-27 02:24:44</sys_updated_on>
+        <type>flow</type>
+    </sys_hub_flow>
+    <sys_translated_text action="delete_multiple" query="documentkey=b2da331fdb94fb00bd71f88eaf961931"/>
+    <sys_variable_value action="delete_multiple" query="document_key=b2da331fdb94fb00bd71f88eaf961931"/>
+</record_update>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_documentation element="existingnetworkinterfacename" label="Network Interface ID" language="en" table="var__m_sys_hub_action_input_185dc4abdbd4fb00bd71f88eaf9619df">
+        <sys_documentation action="INSERT_OR_UPDATE">
+            <element>existingnetworkinterfacename</element>
+            <help/>
+            <hint/>
+            <label>Network Interface ID</label>
+            <language>en</language>
+            <name>var__m_sys_hub_action_input_185dc4abdbd4fb00bd71f88eaf9619df</name>
+            <plural/>
+            <sys_class_name>sys_documentation</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2019-03-25 22:59:57</sys_created_on>
+            <sys_id>385d08abdbd4fb00bd71f88eaf961929</sys_id>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_name>Network Interface ID</sys_name>
+            <sys_package display_value="Azure" source="x_snc_azure_spoke">7603eb16db5c3b00bd71f88eaf9619b8</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Azure">7603eb16db5c3b00bd71f88eaf9619b8</sys_scope>
+            <sys_update_name>sys_documentation_var__m_sys_hub_action_input_185dc4abdbd4fb00bd71f88eaf9619df_existingnetworkinterfacename_en</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2019-03-27 00:09:06</sys_updated_on>
+            <url/>
+            <url_target/>
+        </sys_documentation>
+    </sys_documentation>
+</record_update>

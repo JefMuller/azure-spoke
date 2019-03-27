@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_documentation element="name" label="name" language="en" table="var__m_sys_hub_action_output_1ac9d8e3db18fb00bd71f88eaf96195f">
+        <sys_documentation action="INSERT_OR_UPDATE">
+            <element>name</element>
+            <help/>
+            <hint/>
+            <label>name</label>
+            <language>en</language>
+            <name>var__m_sys_hub_action_output_1ac9d8e3db18fb00bd71f88eaf96195f</name>
+            <plural/>
+            <sys_class_name>sys_documentation</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2019-03-25 23:54:29</sys_created_on>
+            <sys_id>e7c91ce3db18fb00bd71f88eaf961987</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>name</sys_name>
+            <sys_package display_value="Azure" source="x_snc_azure_spoke">7603eb16db5c3b00bd71f88eaf9619b8</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Azure">7603eb16db5c3b00bd71f88eaf9619b8</sys_scope>
+            <sys_update_name>sys_documentation_var__m_sys_hub_action_output_1ac9d8e3db18fb00bd71f88eaf96195f_name_en</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2019-03-25 23:54:29</sys_updated_on>
+            <url/>
+            <url_target/>
+        </sys_documentation>
+    </sys_documentation>
+</record_update>

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_app">
+    <sys_app action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <can_edit_in_studio>false</can_edit_in_studio>
+        <enforce_license>log</enforce_license>
+        <js_level>helsinki_es5</js_level>
+        <licensable>true</licensable>
+        <license_category>none</license_category>
+        <license_model>none</license_model>
+        <logo>0c4cb31fdb94fb00bd71f88eaf961982</logo>
+        <menu display_value="Azure Spoke">1e6cb35fdb94fb00bd71f88eaf9619dc</menu>
+        <name>Azure</name>
+        <private>false</private>
+        <restrict_table_access>false</restrict_table_access>
+        <runtime_access_tracking>permissive</runtime_access_tracking>
+        <scope>x_snc_azure_spoke</scope>
+        <scoped_administration>false</scoped_administration>
+        <short_description/>
+        <source>x_snc_azure_spoke</source>
+        <store_correlation_id/>
+        <store_url/>
+        <sys_class_name>sys_app</sys_class_name>
+        <sys_code/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-03-22 17:21:18</sys_created_on>
+        <sys_id>7603eb16db5c3b00bd71f88eaf9619b8</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-03-25 21:46:36</sys_updated_on>
+        <template/>
+        <trackable>true</trackable>
+        <user_role/>
+        <vendor/>
+        <vendor_prefix/>
+        <version>1.0.0</version>
+    </sys_app>
+    <sys_attachment action="INSERT_OR_UPDATE">
+        <average_image_color/>
+        <chunk_size_bytes>734003</chunk_size_bytes>
+        <compressed>true</compressed>
+        <content_type>image/svg+xml</content_type>
+        <file_name>logo</file_name>
+        <image_height/>
+        <image_width/>
+        <size_bytes>2901</size_bytes>
+        <size_compressed>973</size_compressed>
+        <state/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-03-25 21:45:22</sys_created_on>
+        <sys_id>0c4cb31fdb94fb00bd71f88eaf961982</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-03-25 21:45:22</sys_updated_on>
+        <table_name>ZZ_YYsys_app</table_name>
+        <table_sys_id>7603eb16db5c3b00bd71f88eaf9619b8</table_sys_id>
+    </sys_attachment>
+    <sys_attachment_doc action="INSERT_OR_UPDATE">
+        <data>H4sIAAAAAAAAAA==</data>
+        <length>16</length>
+        <position>0</position>
+        <sys_attachment display_value="logo" sys_id="0c4cb31fdb94fb00bd71f88eaf961982">0c4cb31fdb94fb00bd71f88eaf961982</sys_attachment>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-03-25 21:45:22</sys_created_on>
+        <sys_id>4c4cb31fdb94fb00bd71f88eaf961982</sys_id>
+    </sys_attachment_doc>
+    <sys_attachment_doc action="INSERT_OR_UPDATE">
+        <data>tVZNb9s4EL33V3DZSwNIFEmJohTYLrIy0ouLPXT30kvhlRlbiCIZkmKn/fUdyuKHUqeHBVYIYM7j8M3MmyGRxceXpxqdVNdXbbPEjFCMVFO2u6rZL/E/f9+HGf64erfoT3t0rnbDYYkTdnzB6KCq/WEw1qlS5z/blyWmiKKEwR/2ScGCME2/xIdhON5G0fl8JueYtN0+4pTSCOgnl9uXumoerzmyPM+jcRev3iH4Fn+EIfqkGtVth7a7RV8e1VAekKCEow9C0ETeoBB5RP+2B/VUbafySNk+Rf3lTBhOlEM11Gp19+O5U+huvYgu9mVvp/pyVXRqO6gdiDEcpohkEY1bxuuhX2kEfi7IHlW7JR45w7s1Rv3QtY9qiZu2UcYKJ3FBqYeqrs2mXofdcw3e6qSadrebaveIP3Xt89Ece38/fi7I++J+nawz79h4tKy6slbj+b9O2xqjEprHKUlolqcMsii/j7bAqNMLDCVdzvwPRIto/0tVk1zlUJ1UuK46VUKPv2M0dNumf2i7pyUelzV044MgguovQGZ1YwWhVGZrOZMStP2huva1JpfA/WF7VCwXYczzb+zbGxEzIvI8TeIAMUZ4nPAsvXnFN3IetzAmwPpZkFhIpv0CSvSvtmK0AWXkZAaJXaOCEpmZAwnJjT81S54HjvIVbAg1i49fZUltNgBnJgGALflGmFzyIL8OUxszQYVLYIYLYqoGmHvwVWG+4rEbX3Q39MxoIV/1y5+aXxuYhnHM3m4gE4TLlEKOlw7KcWh+10Fms4NEqVcvs9asAigyc5VJT2XuEdku61FwG3OdLZxaFy2zDZsiAe21TGI2A9qySXmHHC3yIiSOZvNWxf+lN05GAWSxHfTZBWCSCAhr5z3guSkYbbjRJB/9bJJzvq/oM+ckNYQ5MZUXnPsmZ0YUQMEKWOZxyqncNAC/KSo0WtoMADYRATVMENnIPkdT0wwfjk2ZiKWOOHGobYuPFiwm2RVn7tD4KupnMYOnUhEQe1ULh9qM7UCgTWbnRCtnn63MXXIQ23hLz9l2EVD7CHloMfMRmt0zbGP0XDPzAsUodXMN42NQP4JDC2mUSHw408bkjjL3KjFhY25ADDurdKanNFXbW6zFN3OY24hz1HtEHCzd5YV4hjj1KISJ4aMFs8bMWVoKaR9sH51l4cM+ReqqtuPibgOgcG/9KyW8e8ecOALBvNkBcXJzT0CHFjDfZiJ9Z+FQcRWVdvIKd0X0JJnWcHeH/Dfh6sPx+9fOvnTjYqH/k139BBUsArlVCwAA</data>
+        <length>1284</length>
+        <position>1</position>
+        <sys_attachment display_value="logo" sys_id="0c4cb31fdb94fb00bd71f88eaf961982">0c4cb31fdb94fb00bd71f88eaf961982</sys_attachment>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-03-25 21:45:22</sys_created_on>
+        <sys_id>cc4cb31fdb94fb00bd71f88eaf961982</sys_id>
+    </sys_attachment_doc>
+</record_update>

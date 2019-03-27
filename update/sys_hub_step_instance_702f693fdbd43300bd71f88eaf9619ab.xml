@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_hub_step_instance">
+    <sys_hub_step_instance action="INSERT_OR_UPDATE">
+        <action display_value="Create or Update Virtual Network">602f693fdbd43300bd71f88eaf961958</action>
+        <cid>2aec35c2-6822-4896-b03c-580e18034881</cid>
+        <extended_inputs/>
+        <extended_inputs/>
+        <extended_outputs/>
+        <icon/>
+        <inputs/>
+        <label>prepareRequest</label>
+        <order>1</order>
+        <outputs/>
+        <step_type display_value="Script">106afb6647032200b4fad7527c9a71e7</step_type>
+        <sys_class_name>sys_hub_step_instance</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-03-27 00:45:47</sys_created_on>
+        <sys_id>702f693fdbd43300bd71f88eaf9619ab</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name>prepareRequest</sys_name>
+        <sys_package display_value="Azure" source="x_snc_azure_spoke">7603eb16db5c3b00bd71f88eaf9619b8</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Azure">7603eb16db5c3b00bd71f88eaf9619b8</sys_scope>
+        <sys_update_name>sys_hub_step_instance_702f693fdbd43300bd71f88eaf9619ab</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-03-27 00:58:57</sys_updated_on>
+    </sys_hub_step_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=702f693fdbd43300bd71f88eaf9619ab"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>702f693fdbd43300bd71f88eaf9619ab</document_key>
+        <order>400</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-03-27 00:45:48</sys_created_on>
+        <sys_id>0d2f693fdbd43300bd71f88eaf9619ea</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-03-27 00:45:48</sys_updated_on>
+        <value>35aa573fd7802200bdbaee5b5e610375</value>
+        <variable display_value="">f5e56d79b3101300176b051a16a8dce4</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>702f693fdbd43300bd71f88eaf9619ab</document_key>
+        <order>600</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-03-27 00:45:48</sys_created_on>
+        <sys_id>cd2f693fdbd43300bd71f88eaf9619ea</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-03-27 00:58:57</sys_updated_on>
+        <value>(function execute(inputs, outputs) {
+    //Set Uri
+  	outputs.path = "/"+inputs.subscriptionId+"/resourceGroups/"+inputs.resourceGroupName+"/providers/Microsoft.Network/virtualNetworks/" + inputs.virtualNetworkName;
+
+    //Set body
+	outputs.body = {};
+    outputs.body.location = inputs.location;
+    outputs.body.properties = {};
+    outputs.body.properties.addressSpace = {};
+    outputs.body.properties.addressSpace.addressPrefixes = [];
+    outputs.body.properties.addressSpace.addressPrefixes.push(inputs.addressPrefixes);
+    outputs.body = global.JSON.stringify(outputs.body);
+})(inputs, outputs);</value>
+        <variable display_value="">71aa7f6647032200b4fad7527c9a719b</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=702f693fdbd43300bd71f88eaf9619ab"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>addressPrefix</field>
+        <id>702f693fdbd43300bd71f88eaf9619ab</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-03-27 00:45:48</sys_created_on>
+        <sys_id>452f693fdbd43300bd71f88eaf9619ec</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-03-27 00:45:48</sys_updated_on>
+        <table>var__m_sys_hub_step_ext_input_702f693fdbd43300bd71f88eaf9619ab</table>
+        <value>{{action.addressprefix}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>addressPrefixes</field>
+        <id>702f693fdbd43300bd71f88eaf9619ab</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-03-27 00:52:21</sys_created_on>
+        <sys_id>8da0f97fdbd43300bd71f88eaf961948</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-03-27 00:52:21</sys_updated_on>
+        <table>var__m_sys_hub_step_ext_input_702f693fdbd43300bd71f88eaf9619ab</table>
+        <value>{{action.addressprefixes}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>application</field>
+        <id>702f693fdbd43300bd71f88eaf9619ab</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-03-27 00:45:48</sys_created_on>
+        <sys_id>c52f693fdbd43300bd71f88eaf9619ea</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-03-27 00:45:48</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_106afb6647032200b4fad7527c9a71e7</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>location</field>
+        <id>702f693fdbd43300bd71f88eaf9619ab</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-03-27 00:58:57</sys_created_on>
+        <sys_id>a52231ffdbd43300bd71f88eaf9619f4</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-03-27 00:58:57</sys_updated_on>
+        <table>var__m_sys_hub_step_ext_input_702f693fdbd43300bd71f88eaf9619ab</table>
+        <value>{{action.location}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>resourceGroupName</field>
+        <id>702f693fdbd43300bd71f88eaf9619ab</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-03-27 00:45:48</sys_created_on>
+        <sys_id>492f693fdbd43300bd71f88eaf9619eb</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-03-27 00:45:48</sys_updated_on>
+        <table>var__m_sys_hub_step_ext_input_702f693fdbd43300bd71f88eaf9619ab</table>
+        <value>{{action.resourcegroupname}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>script</field>
+        <id>702f693fdbd43300bd71f88eaf9619ab</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-03-27 00:45:48</sys_created_on>
+        <sys_id>892f693fdbd43300bd71f88eaf9619ea</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-03-27 00:45:48</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_106afb6647032200b4fad7527c9a71e7</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>subnetName</field>
+        <id>702f693fdbd43300bd71f88eaf9619ab</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-03-27 00:45:48</sys_created_on>
+        <sys_id>812f693fdbd43300bd71f88eaf9619ec</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-03-27 00:45:48</sys_updated_on>
+        <table>var__m_sys_hub_step_ext_input_702f693fdbd43300bd71f88eaf9619ab</table>
+        <value>{{action.location}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>subscriptionId</field>
+        <id>702f693fdbd43300bd71f88eaf9619ab</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-03-27 00:45:48</sys_created_on>
+        <sys_id>cd2f693fdbd43300bd71f88eaf9619eb</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-03-27 00:45:48</sys_updated_on>
+        <table>var__m_sys_hub_step_ext_input_702f693fdbd43300bd71f88eaf9619ab</table>
+        <value>{{action.subscriptionid}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>virtualNetworkName</field>
+        <id>702f693fdbd43300bd71f88eaf9619ab</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-03-27 00:45:48</sys_created_on>
+        <sys_id>0d2f693fdbd43300bd71f88eaf9619eb</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-03-27 00:45:48</sys_updated_on>
+        <table>var__m_sys_hub_step_ext_input_702f693fdbd43300bd71f88eaf9619ab</table>
+        <value>{{action.virtualnetworkname}}</value>
+    </sys_element_mapping>
+</record_update>

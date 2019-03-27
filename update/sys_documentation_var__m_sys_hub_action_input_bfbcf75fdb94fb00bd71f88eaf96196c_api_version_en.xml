@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_documentation element="api_version" label="apiVersion" language="en" table="var__m_sys_hub_action_input_bfbcf75fdb94fb00bd71f88eaf96196c">
+        <sys_documentation action="INSERT_OR_UPDATE">
+            <element>api_version</element>
+            <help/>
+            <hint>Client Api Version</hint>
+            <label>apiVersion</label>
+            <language>en</language>
+            <name>var__m_sys_hub_action_input_bfbcf75fdb94fb00bd71f88eaf96196c</name>
+            <plural/>
+            <sys_class_name>sys_documentation</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2019-03-25 21:47:32</sys_created_on>
+            <sys_id>bfbcf75fdb94fb00bd71f88eaf96199b</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>apiVersion</sys_name>
+            <sys_package display_value="Azure" source="x_snc_azure_spoke">7603eb16db5c3b00bd71f88eaf9619b8</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Azure">7603eb16db5c3b00bd71f88eaf9619b8</sys_scope>
+            <sys_update_name>sys_documentation_var__m_sys_hub_action_input_bfbcf75fdb94fb00bd71f88eaf96196c_api_version_en</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2019-03-25 21:47:32</sys_updated_on>
+            <url/>
+            <url_target/>
+        </sys_documentation>
+    </sys_documentation>
+</record_update>
